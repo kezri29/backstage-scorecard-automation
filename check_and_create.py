@@ -5,7 +5,7 @@ import sys
 SONAR_HOST_URL = os.getenv("SONAR_HOST_URL", "https://sonarcloud.io")
 SONAR_TOKEN = os.getenv("SONAR_TOKEN")
 SONAR_PROJECT_KEY = os.getenv("SONAR_PROJECT_KEY")
-SONAR_ORG = os.getenv("SONAR_ORGANIZATION")
+SONAR_ORG = os.getenv("SONAR_ORG")
 
 if not SONAR_TOKEN or not SONAR_PROJECT_KEY or not SONAR_ORG:
     print("❌ Missing SONAR_TOKEN, SONAR_PROJECT_KEY, or SONAR_ORGANIZATION environment variables.")
